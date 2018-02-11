@@ -1,5 +1,4 @@
 ﻿body {
-    padding-top: 50px;
     padding-bottom: 20px;
 }
 
@@ -32,4 +31,35 @@
     .carousel-caption {
         display: none;
     }
+}
+
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.navbar-brand {
+    margin-left: 30px;
+}
+
+.navbar {
+    min-height: 75px;
+    background-color: white;
+    /*background-color: #e3f2fd;*/
+}
+
+.navbar-row {
+    margin-right: 30px;
+}
+
+.btn-outline-primary {
+    color: #56b4d9 !important;
+    background-color: transparent !important;
+    border-color: #56b4d9 !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #56b4d9 !important;
+    color: white !important;
 }
