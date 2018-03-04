@@ -69,6 +69,17 @@ h1 {
     color: white !important;
 }
 
+.btn-outline-secondary {
+    color: black !important;
+    background-color: rgb(237, 229, 206) !important;
+    border-color: rgb(63, 93, 109) !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: rgb(158, 158, 158) !important;
+    color: black !important;
+}
+
 .carousel-item img {
     max-height: 100%;
     max-width: 100%;
@@ -102,11 +113,6 @@ h1 {
     padding: 10px;
 }
 
-.university {
-    top: -1px;
-    right: -10px;
-}
-
 .serve {
     padding: 20px;
 }
@@ -115,11 +121,22 @@ h1 {
     margin: 40px;
 }
 
+.serve p {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
 .partners {
     min-height: 400px;
     background-color: rgb(63, 93, 109);
+    color: rgb(237, 229, 206);
+    padding: 20px;
+}
+
+.partners .col {
     text-align: center;
-    color: rgb(231, 225, 197);
+    display: block;
+    margin: auto;
     padding: 20px;
 }
 
@@ -133,7 +150,7 @@ h1 {
 }
 
 .partners img {
-    margin: 50px;
+    /*margin: 50px;*/
     max-height: 100%;
 }
 
@@ -144,17 +161,59 @@ h1 {
 .contact-us {
     min-height: 400px;
     background-color: rgb(78, 84, 88);
-    text-align: center;
-    color: rgb(231, 225, 197);
+    color: rgb(237, 229, 206);
     padding: 20px;
 }
 
+.contact-us h2 {
+    margin: 40px;
+}
+
+.contact-us .col {
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.contact-us a {
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact-us-form label {
+    text-align: right;
+}
+
+.contact-us-form {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.contact-us p {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.contact-us a {
+    display: inline-block;
+}
+
+.social-icon-container {
+    text-align: center;
+}
+
 .social-icon {
-    color: rgb(231, 225, 197);
+    color: rgb(237, 229, 206);
 }
 
 .social-icon:hover {
-    color: rgb(215, 205, 157);
+    color: rgb(158, 158, 158);
 }
 
 /*full width container*/
