@@ -262,3 +262,5 @@ __pycache__/
 
 wwwroot/lib/
 /3PalmsSecurity/Properties/PublishProfiles
+/image staging
+/3PalmsSecurity/wwwroot/images/Thumbs.db

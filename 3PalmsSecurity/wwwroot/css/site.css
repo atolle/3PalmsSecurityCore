@@ -3,6 +3,10 @@
     padding-top: 100px;
 }
 
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
@@ -41,7 +45,7 @@
 }
 
 .navbar-brand {
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .navbar {
@@ -55,13 +59,13 @@
 }
 
 .btn-outline-primary {
-    color: #56b4d9 !important;
+    color: rgb(63, 93, 109) !important;
     background-color: transparent !important;
-    border-color: #56b4d9 !important;
+    border-color: rgb(63, 93, 109) !important;
 }
 
 .btn-outline-primary:hover {
-    background-color: #56b4d9 !important;
+    background-color: rgb(63, 93, 109) !important;
     color: white !important;
 }
 
@@ -76,8 +80,25 @@
 }
 
 .solutions {
-    height: 400px;
-    background-color: #56b4d9;
+    min-height: 400px;
+    background-color: rgb(63, 93, 109);
+    text-align: center;
+    color: rgb(231, 225, 197);
+    padding: 20px;
+}
+
+.solutions > p {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.solutions > h2 {
+    margin: 40px;
+}
+
+.solutions img {
+    margin: 50px;
+    max-height: 100%;
 }
 
 /*full width container*/
