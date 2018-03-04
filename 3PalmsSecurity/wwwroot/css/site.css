@@ -79,7 +79,43 @@ h1 {
     /*max-height: 500px !important;*/
 }
 
-.solutions {
+.img-circle {
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.navbar i.fa {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;
+}
+
+.serve .col {
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+.serve-header {
+    padding: 10px;
+}
+
+.university {
+    top: -1px;
+    right: -10px;
+}
+
+.serve {
+    padding: 20px;
+}
+
+.serve h2 {
+    margin: 40px;
+}
+
+.partners {
     min-height: 400px;
     background-color: rgb(63, 93, 109);
     text-align: center;
@@ -87,18 +123,38 @@ h1 {
     padding: 20px;
 }
 
-.solutions > p {
+.partners p {
     margin-left: 70px;
     margin-right: 70px;
 }
 
-.solutions > h2 {
+.partners h2 {
     margin: 40px;
 }
 
-.solutions img {
+.partners img {
     margin: 50px;
     max-height: 100%;
+}
+
+.partners > col {
+    vertical-align: middle;
+}
+
+.contact-us {
+    min-height: 400px;
+    background-color: rgb(78, 84, 88);
+    text-align: center;
+    color: rgb(231, 225, 197);
+    padding: 20px;
+}
+
+.social-icon {
+    color: rgb(231, 225, 197);
+}
+
+.social-icon:hover {
+    color: rgb(215, 205, 157);
 }
 
 /*full width container*/
