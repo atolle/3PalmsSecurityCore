@@ -43,7 +43,27 @@
     </div>
 </section>
 <section class="block">
-    <div class="serve">
+    <div id="what-we-do">
+        <h2 class="text-center">What We Do</h2>
+        <p class="text-center">Video/POS Cloud Integration</p>
+        <p>This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. This is a description of what we do. </p>
+    </div>
+    <div id="our-partners">
+        <h2 class="text-center">Video Technology Partners</h2>
+        <p>This is a description of video technology partners. This is a description of video technology partners. This is a description of video technology partners. This is a description of video technology partners. This is a description of video technology partners. This is a description of video technology partners. This is a description of video technology partners. This is a description of video technology partners. This is a description of video technology partners. This is a description of video technology partners. </p>
+        <div class="row">
+            <div class="col">
+                <img src="~/images/solink-logo-yellow-transparent.png" width="200" height="33" class="d-inline-block align-top" alt="">
+            </div>
+            <div class="col">
+                <img src="~/images/hanwhatechwin-logo-yellow-transparent.png" width="200" height="57" class="d-inline-block align-top" alt="">
+            </div>
+            <div class="col">
+                <img src="~/images/speco-logo-yellow-transparent.png" width="200" height="33" class="d-inline-block align-top" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="who-we-serve">
         <h2 class="text-center">Who We Serve</h2>
         <p>This is a description of who we serve. This is a description of who we serve. This is a description of who we serve. This is a description of who we serve. This is a description of who we serve. This is a description of who we serve. This is a description of who we serve. This is a description of who we serve. </p>
         <div class="row">
@@ -69,22 +89,25 @@
             </div>
         </div>
     </div>
-    <div class="partners">
-        <h2 class="text-center">Video Technology Partners</h2>
-        <p>This is a description of video technology partners. This is a description of video technology partners. This is a description of video technology partners. This is a description of video technology partners. This is a description of video technology partners. This is a description of video technology partners. This is a description of video technology partners. This is a description of video technology partners. This is a description of video technology partners. This is a description of video technology partners. </p>
-        <div class="row">
-            <div class="col">
-                <img src="~/images/solink-logo-white.png" width="200" height="33" class="d-inline-block align-top" alt="">
-            </div>
-            <div class="col">
-                <img src="~/images/hanwha-techwin-logo-monocolor-cropped-transparent.png" width="200" height="57" class="d-inline-block align-top" alt="">
-            </div>
-            <div class="col">
-                <img src="~/images/speco-logo-monocolor-cropped-transparent.png" width="200" height="33" class="d-inline-block align-top" alt="">
-            </div>
+    <div id="who-we-are">
+        <h2 class="text-center">Who We Are</h2>
+        <p>This is a description of who we are. This is a description of who we are. This is a description of who we are. This is a description of who we are. This is a description of who we are. This is a description of who we are. This is a description of who we are. This is a description of who we are. This is a description of who we are. This is a description of who we are. </p>
+        <div id="phil">
+            <img src="~/images/example_about_image.png" width="164" height="250" alt="Package Management" class="about-img float-left img-responsive" />
+            <br /><br />
+            <h3>Phil Tolle</h3>
+            <p>This is a description of Phil. This is a description of Phil. This is a description of Phil. This is a description of Phil. This is a description of Phil. This is a description of Phil. This is a description of Phil. This is a description of Phil. This is a description of Phil. This is a description of Phil. This is a description of Phil. This is a description of Phil. </p>
         </div>
+        <div style="clear:both"></div>
+        <div id="kevin">
+            <img src="~/images/example_about_image.png" width="164" height="250" alt="Package Management" class="about-img float-right img-responsive" />
+            <br /><br />
+            <h3>Kevin Searight</h3>
+            <p>This is a description of Kevin. This is a description of Kevin. This is a description of Kevin. This is a description of Kevin. This is a description of Kevin. This is a description of Kevin. This is a description of Kevin. This is a description of Kevin. This is a description of Kevin. This is a description of Kevin. This is a description of Kevin. </p>
+        </div>
+        <div style="clear:both"></div>
     </div>
-    <div class="contact-us">
+    <div id="contact-us">
         <h2 class="text-center">Contact Us 24/7</h2>
         <p>This is a description of contact us 24/7. This is a description of contact us 24/7. This is a description of contact us 24/7. This is a description of contact us 24/7. This is a description of contact us 24/7. </p>
         <div class="contact-us-form">
@@ -99,5 +122,50 @@
     </div>
 </section>
 
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            var navbarOffset = $("nav").height();
 
+            $("#home-btn").click(function () {
+                $('html,body').animate({
+                    scrollTop: $("#myCarousel").offset().top - navbarOffset
+                }, 'slow');
+            });
+
+            $("#what-we-do-btn").click(function () {
+                $('html,body').animate({
+                    scrollTop: $("#what-we-do").offset().top - navbarOffset
+                }, 'slow');
+            });
+
+            $("#our-partners-btn").click(function () {
+                $('html,body').animate({
+                    scrollTop: $("#our-partners").offset().top - navbarOffset
+                }, 'slow');
+            });
+
+            $("#who-we-serve-btn").click(function () {
+                $('html,body').animate({
+                    scrollTop: $("#who-we-serve").offset().top - navbarOffset
+                }, 'slow');
+            });
+
+            $("#who-we-are-btn").click(function () {
+                $('html,body').animate({
+                    scrollTop: $("#who-we-are").offset().top - navbarOffset
+                }, 'slow');
+            });
+
+            $("#contact-us-btn").click(function () {
+                $('html,body').animate({
+                    scrollTop: $("#contact-us").offset().top - navbarOffset
+                }, 'slow');
+            });
+        });
+    </script>
+}
+/**/
+/**/
 

@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - 3 Palms Security</title>
+    @*<title>@ViewData["Title"] - 3 Palms Security</title>*@
+    <title>3 Palms Security</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -12,8 +13,8 @@
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.0.0/css/bootstrap.min.css"
-        asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-        asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css">
@@ -29,7 +30,6 @@
                @* <img src="~/images/logo_blue_blue.png" width="157" height="125" class="d-inline-block align-top" alt="">*@
                 <img src="~/images/logo_red_blueoutline.png" width="157" height="125" class="d-inline-block align-top" alt="">
                 @*<img src="~/images/logo_red_small_cropped.png" width="157" height="61" class="d-inline-block align-top" alt="">*@
-                @*<h4 class="navbar-text">3 Palms Security</h4>*@
             </a>
 
             <div class="collapse navbar-collapse flex-column ml-lg-0 ml-3" id="navbarSupportedContent">
@@ -37,35 +37,26 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa fa-phone"></i> 1-800-123-4567</a>
                     </li>
-                    @*<li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-twitter"></i></a>
-                    </li>*@
                 </ul>
                 <br/>
                 <ul class="nav navbar-nav ml-auto flex-row mb-2 navbar-row">
                     <li class="nav-item">
-                        <a class="nav-link" asp-area="" asp-controller="" asp-action="">Home</a>
+                        <a class="nav-link" id="home-btn">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" asp-area="" asp-controller="" asp-action="">Solutions</a>
+                        <a class="nav-link" id="what-we-do-btn">What We Do</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-area="" asp-controller="" asp-action="">What We Do</a>
+                        <a class="nav-link" id="our-partners-btn">Solutions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-area="" asp-controller="" asp-action="">News</a>
+                        <a class="nav-link" id="who-we-serve-btn">Who We Serve</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-area="" asp-controller="" asp-action="">About Us</a>
+                        <a class="nav-link" id="who-we-are-btn">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-outline-primary my-2 my-sm-0" asp-area="" asp-controller="Home" asp-action="Contact">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" id="contact-us-btn">
                             Contact Us
                         </button>
                     </li>
