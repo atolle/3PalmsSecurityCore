@@ -7,13 +7,6 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
@@ -51,6 +44,8 @@ h1 {
 .navbar {
     min-height: 75px;
     background-color: white;
+    border-bottom: solid;
+    border-color: rgb(240, 240, 240);
     /*background-color: #e3f2fd;*/
 }
 
@@ -233,9 +228,11 @@ h1 {
 
 .contact-us-form {
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     margin: 0 auto;
     width: 50%;
+    border-style: solid;
+    border-color: rgb(237, 229, 206);
 }
 
 #contact-us p {
@@ -245,6 +242,10 @@ h1 {
 
 #contact-us a {
     display: inline-block;
+}
+
+#contact-us h4 {
+    padding-top: 20px;
 }
 
 .social-icon-container {
@@ -271,7 +272,12 @@ h1 {
 }
 
 #phil h3 {
+    padding-bottom: 0px;
+}
+
+#phil h5 {
     padding-bottom: 20px;
+    font-style: italic;
 }
 
 #kevin p {
@@ -281,7 +287,13 @@ h1 {
 
 #kevin h3 {
     margin-left: 70px;
+    padding-bottom: 0px;
+}
+
+#kevin h5 {
+    margin-left: 70px;
     padding-bottom: 20px;
+    font-style: italic;
 }
 
 /*full width container*/
@@ -290,4 +302,8 @@ h1 {
         margin-left: -20px;
         margin-right: -20px;
     }
+}
+
+.nav-link:hover {
+    cursor: pointer;
 }
